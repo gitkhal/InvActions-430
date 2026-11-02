@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Inventory Agent</title>
+</head>
+
+<body>
+    <h1>AI Inventory Agent</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <input
+            type="text"
+            name="message"
+            value="{{ message }}"
+            placeholder="Ask about inventory..."
+            size="60"
+        >
+
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+        <h2>Agent Response</h2>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>

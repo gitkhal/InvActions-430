@@ -1,0 +1,5 @@
+inventory_env/
+__pycache__/
+*.pyc
+.git/
+.env

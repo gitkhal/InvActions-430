@@ -1,0 +1,4 @@
+.env
+inventory_env/
+__pycache__/
+*.pyc
